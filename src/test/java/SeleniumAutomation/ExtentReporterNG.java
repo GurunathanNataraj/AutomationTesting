@@ -12,6 +12,7 @@ import org.testng.ISuite;
 import org.testng.ISuiteResult;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
+import org.testng.annotations.Test;
 import org.testng.xml.XmlSuite;
  
 import com.relevantcodes.extentreports.ExtentReports;
@@ -45,7 +46,18 @@ public class ExtentReporterNG implements IReporter {
  
         if (tests.size() > 0) {
             for (ITestResult result : tests.getAllResults()) {
-                test = extent.startTest(result.getMethod().getMethodName());
+
+
+                test = extent.startTest(result.getMethod().getRealClass().getName()+" : "+(result.getMethod().getMethodName()));
+
+               // test = extent.startTest(result.getMethod().getMethodName());
+
+               /*
+
+                String feature = result.getMethod().getRealClass().getName() + ":" + result.getMethod().getMethodName();
+                test = extent.createTest(feature, result.getMethod().getDescription());
+
+                */
  
                 /*test.getTest(). = getTime(result.getStartMillis());
                 test.getTest().endedTime = getTime(result.getEndMillis());*/

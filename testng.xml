@@ -5,10 +5,11 @@
   <listener class-name="SeleniumAutomation.ZTestListener"/>
   <listener class-name="SeleniumAutomation.ExtentReporterNG"/>
   </listeners>
-  <test name="InvokeTest"><classes><class name="SeleniumAutomation.InvokeTest"/></classes></test>
-  <test name="Test"><classes><class name="SeleniumAutomation.JoinNowTest"/></classes></test>
-  <test name="CourseValidation"><classes><class name="SeleniumAutomation.CoursesValidation"/></classes></test>
-  
+  <test name="Rehire">
+    <classes>
+      <class name="TestCases.RehireTerminatedUser_1001"/>
+    </classes>
+  </test>
       
    
 </suite> <!-- Suite -->

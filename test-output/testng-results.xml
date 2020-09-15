@@ -1,136 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-20T14:43:13Z" name="Suite" finished-at="2020-04-20T14:44:28Z" duration-ms="75213">
+  <suite started-at="2020-09-01T06:48:24Z" name="Suite" finished-at="2020-09-01T06:50:02Z" duration-ms="97364">
     <groups>
     </groups>
-    <test started-at="2020-04-20T14:43:13Z" name="InvokeTest" finished-at="2020-04-20T14:43:56Z" duration-ms="43071">
-      <class name="SeleniumAutomation.InvokeTest">
-        <test-method is-config="true" signature="Initialize()[pri:0, instance:SeleniumAutomation.InvokeTest@1460a8c0]" started-at="2020-04-20T14:43:13Z" name="Initialize" finished-at="2020-04-20T14:43:25Z" duration-ms="11615" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Initialize -->
-        <test-method signature="invoke(java.lang.String, java.lang.String)[pri:0, instance:SeleniumAutomation.InvokeTest@1460a8c0]" started-at="2020-04-20T14:43:25Z" name="invoke" data-provider="getData" finished-at="2020-04-20T14:43:55Z" duration-ms="30417" status="FAIL">
+    <test started-at="2020-09-01T06:48:24Z" name="Rehire" finished-at="2020-09-01T06:50:02Z" duration-ms="97364">
+      <class name="TestCases.RehireTerminatedUser_1003">
+        <test-method signature="ValidateRehireEventNotTriggered(java.lang.String, java.lang.String)[pri:0, instance:TestCases.RehireTerminatedUser_1003@768b970c]" started-at="2020-09-01T06:48:24Z" name="ValidateRehireEventNotTriggered" data-provider="ValidateRehireEventNotTriggeredData" finished-at="2020-09-01T06:49:32Z" duration-ms="67391" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[gurunathannataraj@gmail.com]]>
+                <![CDATA[IQ0473]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[guruspartan77]]>
+                <![CDATA[pgRehireEventTrigger]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Logi']"}
-  (Session info: chrome=81.0.4044.113)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LENOVO', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.113, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c22270423c74b1c29153d5331f7e3799
-*** Element info: {Using=xpath, value=//a[text()='Logi']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Logi']"}
-  (Session info: chrome=81.0.4044.113)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LENOVO', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.113, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c22270423c74b1c29153d5331f7e3799
-*** Element info: {Using=xpath, value=//a[text()='Logi']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at PageObjects.HomePage.SignIn(HomePage.java:24)
-at SeleniumAutomation.InvokeTest.invoke(InvokeTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invoke -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:SeleniumAutomation.InvokeTest@1460a8c0]" started-at="2020-04-20T14:43:56Z" name="TearDown" finished-at="2020-04-20T14:43:56Z" duration-ms="413" status="PASS">
+        </test-method> <!-- ValidateRehireEventNotTriggered -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:TestCases.RehireTerminatedUser_1003@768b970c]" started-at="2020-09-01T06:49:32Z" name="Close" finished-at="2020-09-01T06:49:32Z" duration-ms="603" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- SeleniumAutomation.InvokeTest -->
-    </test> <!-- InvokeTest -->
-    <test started-at="2020-04-20T14:43:57Z" name="Test" finished-at="2020-04-20T14:44:17Z" duration-ms="20385">
-      <class name="SeleniumAutomation.JoinNowTest">
-        <test-method is-config="true" signature="Initialize()[pri:0, instance:SeleniumAutomation.JoinNowTest@5bfa9431]" started-at="2020-04-20T14:43:57Z" name="Initialize" finished-at="2020-04-20T14:44:06Z" duration-ms="9023" status="PASS">
+        </test-method> <!-- Close -->
+      </class> <!-- TestCases.RehireTerminatedUser_1003 -->
+      <class name="TestCases.RehireTerminatedUser_1001">
+        <test-method signature="ValidateRehireEventTrigger(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:TestCases.RehireTerminatedUser_1001@5a4041cc]" started-at="2020-09-01T06:49:32Z" name="ValidateRehireEventTrigger" data-provider="ValidateRehireEventTriggerData" finished-at="2020-09-01T06:49:50Z" duration-ms="17728" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EJ3733]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pgRehireEventTrigger]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Rehire]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Initialize -->
-        <test-method signature="Test()[pri:0, instance:SeleniumAutomation.JoinNowTest@5bfa9431]" started-at="2020-04-20T14:44:06Z" name="Test" finished-at="2020-04-20T14:44:16Z" duration-ms="10612" status="PASS">
+        </test-method> <!-- ValidateRehireEventTrigger -->
+        <test-method signature="ValidatingEnterpriseDirectoryAttributes(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:TestCases.RehireTerminatedUser_1001@5a4041cc]" started-at="2020-09-01T06:49:50Z" name="ValidatingEnterpriseDirectoryAttributes" data-provider="ValidatingEnterpriseDirectoryAttributesData" finished-at="2020-09-01T06:50:00Z" duration-ms="9509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EJ3733]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Stephen]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SA]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Crawford]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[crawford.sa]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[crawford.sa]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[crawford.sa@pgdevone.mail.onmicrosoft.com]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[crawford.sa@pgdev.zone]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[crawford.sa@exchangemail.pgdev.com]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[crawford.sa@pgdev.zone]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[ej3733@pgdev.zone]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[active]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:SeleniumAutomation.JoinNowTest@5bfa9431]" started-at="2020-04-20T14:44:16Z" name="Teardown" finished-at="2020-04-20T14:44:17Z" duration-ms="738" status="PASS">
+        </test-method> <!-- ValidatingEnterpriseDirectoryAttributes -->
+        <test-method signature="ValidatingActiveDirectoryAttributes(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:TestCases.RehireTerminatedUser_1001@5a4041cc]" started-at="2020-09-01T06:50:00Z" name="ValidatingActiveDirectoryAttributes" data-provider="ValidatingActiveDirectoryAttributesData" finished-at="2020-09-01T06:50:00Z" duration-ms="607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[crawford.sa@pgdev.zone]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crawford.sa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[smtp:crawford.sa@exchangemail.pgdev.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SMTP:crawford.sa@pgdev.zone]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[smtp:crawford.sa@pgdevone.mail.onmicrosoft.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[smtp:ej3733@pgdev.zone]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[SMTP:crawford.sa@pgdevone.mail.onmicrosoft.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[crawford.sa@pgdev.wtf.pg.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- SeleniumAutomation.JoinNowTest -->
-    </test> <!-- Test -->
-    <test started-at="2020-04-20T14:44:17Z" name="CourseValidation" finished-at="2020-04-20T14:44:28Z" duration-ms="11305">
-      <class name="SeleniumAutomation.CoursesValidation">
-        <test-method is-config="true" signature="Initialize()[pri:0, instance:SeleniumAutomation.CoursesValidation@60dcc9fe]" started-at="2020-04-20T14:44:17Z" name="Initialize" finished-at="2020-04-20T14:44:26Z" duration-ms="8555" status="PASS">
+        </test-method> <!-- ValidatingActiveDirectoryAttributes -->
+        <test-method signature="VerifyEntitlements()[pri:4, instance:TestCases.RehireTerminatedUser_1001@5a4041cc]" started-at="2020-09-01T06:50:00Z" name="VerifyEntitlements" finished-at="2020-09-01T06:50:01Z" duration-ms="885" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Initialize -->
-        <test-method signature="TextValidation()[pri:0, instance:SeleniumAutomation.CoursesValidation@60dcc9fe]" started-at="2020-04-20T14:44:26Z" name="TextValidation" finished-at="2020-04-20T14:44:26Z" duration-ms="265" status="PASS">
+        </test-method> <!-- VerifyEntitlements -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:TestCases.RehireTerminatedUser_1001@5a4041cc]" started-at="2020-09-01T06:50:01Z" name="Close" finished-at="2020-09-01T06:50:02Z" duration-ms="608" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TextValidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:SeleniumAutomation.CoursesValidation@60dcc9fe]" started-at="2020-04-20T14:44:26Z" name="teardown" finished-at="2020-04-20T14:44:28Z" duration-ms="2470" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- SeleniumAutomation.CoursesValidation -->
-    </test> <!-- CourseValidation -->
+        </test-method> <!-- Close -->
+      </class> <!-- TestCases.RehireTerminatedUser_1001 -->
+    </test> <!-- Rehire -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -9,38 +9,14 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">InvokeTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">43,071</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">20,385</td><td></td><td></td></tr>
-<tr><td><a href="#t2">CourseValidation</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">11,305</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num attn">1</th><th class="num">74,761</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Rehire</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">97,364</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">InvokeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">SeleniumAutomation.InvokeTest</td><td><a href="#m0">invoke</a></td><td rowspan="1">1587393805352</td><td rowspan="1">30417</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">SeleniumAutomation.JoinNowTest</td><td><a href="#m1">Test</a></td><td rowspan="1">1587393846203</td><td rowspan="1">10612</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">CourseValidation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">SeleniumAutomation.CoursesValidation</td><td><a href="#m2">TextValidation</a></td><td rowspan="1">1587393866133</td><td rowspan="1">265</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Rehire &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">TestCases.RehireTerminatedUser_1001</td><td><a href="#m0">ValidateRehireEventTrigger</a></td><td rowspan="1">1598942972872</td><td rowspan="1">17728</td></tr><tr class="passedeven"><td><a href="#m1">ValidatingActiveDirectoryAttributes</a></td><td rowspan="1">1598943000110</td><td rowspan="1">607</td></tr><tr class="passedeven"><td><a href="#m2">ValidatingEnterpriseDirectoryAttributes</a></td><td rowspan="1">1598942990601</td><td rowspan="1">9509</td></tr><tr class="passedeven"><td><a href="#m3">VerifyEntitlements</a></td><td rowspan="1">1598943000717</td><td rowspan="1">885</td></tr><tr class="passedodd"><td rowspan="1">TestCases.RehireTerminatedUser_1003</td><td><a href="#m4">ValidateRehireEventNotTriggered</a></td><td rowspan="1">1598942904878</td><td rowspan="1">67391</td></tr></tbody>
 </table>
-<h2>InvokeTest</h2><h3 id="m0">SeleniumAutomation.InvokeTest#invoke</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>gurunathannataraj@gmail.com</td><td>guruspartan77</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Logi&apos;]&quot;}
-  (Session info: chrome=81.0.4044.113)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.1.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.113, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c22270423c74b1c29153d5331f7e3799
-*** Element info: {Using=xpath, value=//a[text()=&apos;Logi&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at PageObjects.HomePage.SignIn(HomePage.java:24)
-	at SeleniumAutomation.InvokeTest.invoke(InvokeTest.java:27)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test</h2><h3 id="m1">SeleniumAutomation.JoinNowTest#Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>CourseValidation</h2><h3 id="m2">SeleniumAutomation.CoursesValidation#TextValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Rehire</h2><h3 id="m0">TestCases.RehireTerminatedUser_1001#ValidateRehireEventTrigger</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>EJ3733</td><td>pgRehireEventTrigger</td><td>Rehire</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestCases.RehireTerminatedUser_1001#ValidatingActiveDirectoryAttributes</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>crawford.sa@pgdev.zone</td><td>crawford.sa</td><td>smtp:crawford.sa@exchangemail.pgdev.com</td><td>SMTP:crawford.sa@pgdev.zone</td><td>smtp:crawford.sa@pgdevone.mail.onmicrosoft.com</td><td>smtp:ej3733@pgdev.zone</td><td>SMTP:crawford.sa@pgdevone.mail.onmicrosoft.com</td><td>crawford.sa@pgdev.wtf.pg.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestCases.RehireTerminatedUser_1001#ValidatingEnterpriseDirectoryAttributes</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th></tr><tr class="param stripe"><td>EJ3733</td><td>Stephen</td><td>SA</td><td>Crawford</td><td>crawford.sa</td><td>crawford.sa</td><td>0</td><td>0</td><td>false</td><td>P</td><td>crawford.sa@pgdevone.mail.onmicrosoft.com</td><td>crawford.sa@pgdev.zone</td><td>crawford.sa@exchangemail.pgdev.com</td><td>crawford.sa@pgdev.zone</td><td>ej3733@pgdev.zone</td><td>active</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestCases.RehireTerminatedUser_1001#VerifyEntitlements</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestCases.RehireTerminatedUser_1003#ValidateRehireEventNotTriggered</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>IQ0473</td><td>pgRehireEventTrigger</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
